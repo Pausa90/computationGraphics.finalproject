@@ -279,3 +279,4 @@ back_cushion = COLOR(cushion_color)(back_cushion);
 
 var model = STRUCT([back_cushion,chassis,seat_cushion,arm_cushions]);
 
+draw(model)

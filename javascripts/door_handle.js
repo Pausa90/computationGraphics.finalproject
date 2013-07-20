@@ -305,4 +305,6 @@ var door = STRUCT([SIMPLEX_GRID([[0.28,-0.6,7],[depth],[15]]),SIMPLEX_GRID([[-0.
 door = COLOR(door_color)(door)
 var door_complete = STRUCT([door,TNC([2])([5])(model)])
 
-draw(door_complete)
+//draw(door_complete)
+
+draw(model)

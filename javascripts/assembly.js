@@ -1380,6 +1380,6 @@ var showModel = function(){
                             TNC([0,1])([60,5]),tables,TNC([0,1,2])([4,5,17.5])(cups),TNC([0,1,2])([22,5,19.5])(cup),TNC([0,1,2])([25,11,21])(pot)])
 
     draw(models)
-
+    return models;
 
 }
