@@ -21,12 +21,9 @@ function clearBody() {
 
 }
 
+//           Auxiliary Functions and Global Variables
 
-
-var showModel = function(){
-    //                                            Auxiliary Functions and Global Variables
-
-    var line_domain = INTERVALS(1)(8)
+ var line_domain = INTERVALS(1)(8)
     var area_domain = PROD1x1([INTERVALS(1)(8),INTERVALS(1)(8)])
 
     var drawable_objects = [];
@@ -382,6 +379,9 @@ var showModel = function(){
         return EXTRUDE([h])(DISK(r)([64, 2]))
     }
 
+var showModel = function(){
+
+   
 
     //                                                          Tac Tea Pot
     var pot_color = rgb([300,300,300]);
