@@ -1,4 +1,28 @@
+var renderDoorHandle = function() {
+  var p = new Plasm('plasm', 'plasm-inspector');
+    fun.PLASM(p);
 
+    var plasm = document.createElement("div");
+    var canvas = document.getElementsByTagName('canvas')[0];
+    canvas.setAttribute("height","500px");
+    canvas.setAttribute("onmouseover","hiddenBody()");
+    canvas.setAttribute("onmouseout","clearBody()");
+
+    showModel();
+}
+
+function hiddenBody() {
+  document.getElementById("r").style.overflow = 'hidden';
+
+}
+
+function clearBody() {
+  document.getElementById("r").style.overflow = 'auto';
+
+}
+
+
+var showModel = function(){
 var drawable_objects = [];
 
 function draw(obj){
@@ -308,3 +332,4 @@ var door_complete = STRUCT([door,TNC([2])([5])(model)])
 //draw(door_complete)
 
 draw(model)
+}

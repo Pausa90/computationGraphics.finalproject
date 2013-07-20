@@ -1,4 +1,29 @@
-var drawable_objects = [];
+var renderTables = function() {
+  var p = new Plasm('plasm', 'plasm-inspector');
+    fun.PLASM(p);
+
+    var plasm = document.createElement("div");
+    var canvas = document.getElementsByTagName('canvas')[0];
+    canvas.setAttribute("height","500px");
+    canvas.setAttribute("onmouseover","hiddenBody()");
+    canvas.setAttribute("onmouseout","clearBody()");
+
+    showModel();
+}
+
+function hiddenBody() {
+  document.getElementById("r").style.overflow = 'hidden';
+
+}
+
+function clearBody() {
+  document.getElementById("r").style.overflow = 'auto';
+
+}
+
+
+var showModel = function(){
+	var drawable_objects = [];
 
 function draw(obj){
 	drawable_objects.push(obj);
@@ -255,3 +280,4 @@ var table2 = STRUCT([S([x,y,z])([relationship,relationship,relationship])(chassi
 var tables = STRUCT([table1, TNC([x,y])([(chassis_x-2*chassis_ray)+chassis_x*relationship,relationship*chassis_y])(RNC([x,y])(PI)(table2)) ])
 
 draw(tables)
+}

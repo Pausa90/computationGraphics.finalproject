@@ -21,6 +21,8 @@ function clearBody() {
 
 }
 
+
+var showModel = function(){
 //           Auxiliary Functions and Global Variables
 
  var line_domain = INTERVALS(1)(8)
@@ -378,8 +380,6 @@ function clearBody() {
     function cilynder(r,h){
         return EXTRUDE([h])(DISK(r)([64, 2]))
     }
-
-var showModel = function(){
 
    
 

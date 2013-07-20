@@ -1,4 +1,29 @@
-var drawable_objects = [];
+var renderTeaCup = function() {
+  var p = new Plasm('plasm', 'plasm-inspector');
+    fun.PLASM(p);
+
+    var plasm = document.createElement("div");
+    var canvas = document.getElementsByTagName('canvas')[0];
+    canvas.setAttribute("height","500px");
+    canvas.setAttribute("onmouseover","hiddenBody()");
+    canvas.setAttribute("onmouseout","clearBody()");
+
+    showModel();
+}
+
+function hiddenBody() {
+  document.getElementById("r").style.overflow = 'hidden';
+
+}
+
+function clearBody() {
+  document.getElementById("r").style.overflow = 'auto';
+
+}
+
+
+var showModel = function(){
+	var drawable_objects = [];
 
 function draw(obj){
 	drawable_objects.push(obj);
@@ -208,3 +233,4 @@ plate = SNC([0,1,2])([1.25,1.25,1.25])(plate);
 
 var cup = STRUCT([cup_external,plate,handle]);
 draw(cup)
+}
